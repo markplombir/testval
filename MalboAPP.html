@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MalboAPP - Welcome</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ffebee 0%, #fce4ec 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .main-title {
+            font-size: 4.5rem;
+            font-weight: bold;
+            color: #e91e63;
+            text-shadow: 3px 3px 6px rgba(233, 30, 99, 0.2);
+            margin-bottom: 30px;
+            line-height: 1.1;
+        }
+
+        .download-text {
+            font-size: 1.5rem;
+            color: #ad1457;
+            margin-bottom: 40px;
+            font-weight: 600;
+        }
+
+        .download-button {
+            display: inline-block;
+            background: linear-gradient(45deg, #e91e63, #ad1457);
+            color: white;
+            padding: 18px 45px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            box-shadow: 0 8px 25px rgba(233, 30, 99, 0.4);
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .download-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(233, 30, 99, 0.6);
+            background: linear-gradient(45deg, #d81b60, #880e4f);
+        }
+
+        .features {
+            margin-top: 60px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            width: 100%;
+        }
+
+        .feature {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(233, 30, 99, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .feature:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature h3 {
+            color: #e91e63;
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+
+        .feature p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Адаптивность для мобильных */
+        @media (max-width: 768px) {
+            .main-title {
+                font-size: 3rem;
+            }
+            
+            .download-text {
+                font-size: 1.2rem;
+            }
+            
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="main-title">WELCOME TO MalboAPP</h1>
+        <div class="download-text">DOWNLOAD APP</div>
+        <a href="#" class="download-button">Download Now</a>
+        
+        <div class="features">
+            <div class="feature">
+                <h3>🚀 Быстро</h3>
+                <p>Мгновенная загрузка и высокая производительность</p>
+            </div>
+            <div class="feature">
+                <h3>🔒 Безопасно</h3>
+                <p>Ваши данные под надежной защитой</p>
+            </div>
+            <div class="feature">
+                <h3>💎 Просто</h3>
+                <p>Интуитивно понятный интерфейс</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
